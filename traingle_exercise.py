@@ -3,10 +3,6 @@ This exercise if to practice
 my OOP concept in Python
 """
 
-
-from asyncio import FastChildWatcher
-
-
 class triangle:
     def __init__(self, a, b, c):
         self.a = a
