@@ -1,5 +1,5 @@
 """
-This exercise if to practice 
+This exercise is to practice 
 my OOP concept in Python
 """
 
