@@ -15,3 +15,11 @@ print(list_3)
 matrix = [[1, 2, 10], [3, 4, 11], [5, 6, 12], [7, 8, 13]]
 transpose =  [[row[i] for row in matrix] for i in range(3)]
 print(transpose)
+
+numbers = [1, 2, 3, 4, 5]
+square_dict = {num: num**2 for num in numbers}
+print(square_dict)
+
+old_price = {'milk': 1.5, 'egg': 2.5, 'bread': 3.0}
+new_price = {key: value*1.5 if value>=2.0 else value for (key, value) in old_price.items()}
+print(new_price)
