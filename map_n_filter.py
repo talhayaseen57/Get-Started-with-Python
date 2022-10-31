@@ -1,3 +1,5 @@
+from math import pi
+
 numbers = [1, 2, 3, 4, 5]
 
 # creating new list which have square of only even numbers
@@ -13,3 +15,8 @@ print(result)
 # filtering even numbers from the list
 even_numbers = list(filter(lambda x:x%2==0, numbers))
 print(even_numbers)
+
+# find area of corresponding radii of circle
+radius = [3, 6, 8, 2, 4]        # radius of circle
+area = list(map(lambda x:2*pi*(x**2), radius))
+print(area)
