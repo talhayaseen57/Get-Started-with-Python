@@ -1,5 +1,3 @@
-import time
-
 names = ['Anna', 'Alexa', 'Marine']
 marks = [98, 56, 89]
 
