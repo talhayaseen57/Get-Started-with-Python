@@ -23,9 +23,8 @@ def fibonacciVal2(n):
     
     return memo[n]
 
-
 if __name__ == "__main__":
-    val1 = fibonacciVal1(6)
-    val2 = fibonacciVal2(6)
+    val1 = fibonacciVal1(5)
+    val2 = fibonacciVal2(5)
     print(val1)
     print(val2)
