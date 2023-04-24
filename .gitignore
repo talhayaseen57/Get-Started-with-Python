@@ -1,3 +1,4 @@
 /.idea
 /venv
-*.out.rtf
+*.rtf
+*.txt

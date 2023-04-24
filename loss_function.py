@@ -14,7 +14,7 @@ def calculate_moving_average(array_list, window_size):
 
 
 def main():
-    file_name = "iSAID.out.rtf"
+    file_name = "hrsid_train.txt"
     file = open(file_name, "r")
 
     iterations = []
@@ -27,9 +27,20 @@ def main():
         iterations.append(int(data[4]))
         total_loss.append(float(data[6]))
 
-    smoothed_losses = calculate_moving_average(total_loss, 10)
+    smoothed_losses1 = calculate_moving_average(total_loss, 10)
+    # smoothed_losses2 = calculate_moving_average(total_loss, 25)
+    # smoothed_losses3 = calculate_moving_average(total_loss, 50)
+    # smoothed_losses4 = calculate_moving_average(total_loss, 100)
+    # smoothed_losses5 = calculate_moving_average(total_loss, 150)
+    smoothed_losses6 = calculate_moving_average(total_loss, 200)
 
-    plt.plot(iterations, smoothed_losses)
+    plt.plot(iterations, smoothed_losses1)
+    # plt.plot(iterations, smoothed_losses2)
+    # plt.plot(iterations, smoothed_losses3)
+    # plt.plot(iterations, smoothed_losses4)
+    # plt.plot(iterations, smoothed_losses5)
+    plt.plot(iterations, smoothed_losses6)
+
     plt.xlabel("Iterations")
     plt.ylabel("Total Losses")
     plt.show()
